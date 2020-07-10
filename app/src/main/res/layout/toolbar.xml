@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layoutDirection="ltr"
+    android:background="@color/colorPrimary"
+    android:elevation="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:gravity="center|left">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MovieApp"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bold"
+                android:layout_marginLeft="8dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".15"
+            android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_about"
+                android:layout_gravity="center"
+                android:id="@+id/img_search"
+                android:layout_marginLeft="10dp"
+                android:padding="18dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>
